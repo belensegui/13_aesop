@@ -1,0 +1,338 @@
+<html lang="es" class="translated-ltr"><head>
+    <meta charset="UTF-8">
+    <title>AESOP</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Ibarra+Real+Nova&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <style type="text/css">
+        :root{
+            --ibarra: 'Ibarra Real Nova', serif;
+            --comfortaa: 'Comfortaa', cursive;
+            --crema: #FFFEF3;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: var(--crema);
+            padding: 0 100px 0 100px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+/*HEADER*/
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        menu{
+/*            background: blue;*/
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: 1em;
+        }
+        menu select, menu a, menu ul{
+            padding: 0 1em;
+        }
+        menu select{
+            border: none;
+            background: var(--crema);
+        }
+        ul ul{
+            visibility: hidden;
+            position: absolute;
+            background: var(--crema);
+            padding: 1em
+        }
+        ul li:hover ul{
+            list-style-type: none;
+            visibility: inherit;
+        }
+        ul li ul li{
+            padding: 0.5;
+            font-size: 
+        }
+        ul li ul li a{
+            color: black;
+        }
+        h1{
+            display: flex;
+            justify-content: center; /*NO VA*/
+            width: 180px;
+        }
+        h2{
+            font-family: var(--ibarra);
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 3em 5em;
+        }
+/*
+        nav .navigation a:first-child{
+            border-bottom: 1px solid black;
+        }
+*/
+        nav a{
+            color: black;
+            margin: 0 1em 0 0;
+        }
+/*MAIN*/
+        .container{
+/*            background: red;*/
+            display: grid;
+            grid-template: repeat(8, 140px)/ repeat(5, 1fr);
+            grid-gap: 20px;
+            border: 1px black solid;
+        }
+        .container>div{
+            display: flex;
+            flex-direction: column;
+        }
+        div header{
+            display: flex;
+            flex-direction: column;
+        }
+        h3, h4{
+            text-align: center;
+        }
+        header{
+            text-align: center;
+            font-size: 0.8em;
+        }
+        .caja_img img{
+            object-fit: cover;
+            width: 100%;
+        }
+        .container header{
+            height: 20px;
+            padding: 0 10px 10px 10px;
+        }
+        .item-1{
+            border-bottom: 1px;
+            border-right: 1px;
+            
+            grid-row-start: 1;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .item-2{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .item-3{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .item-4{
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .item-5{
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .item-6{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+        .item-7{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        .item-8{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: ;
+            grid-row-end: ;
+        }
+        .item-9{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 7;
+            grid-row-end: 9;
+        }
+        .item-10{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 5;
+            grid-row-end: 9;
+        }
+        .item-11{
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 5;
+            grid-row-end: 9;
+        }
+        </style>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
+    </head>
+    <body>
+        <header>
+            <menu><!--ENCABEZAMIENTO ARRIBA--> 
+            <!--WEB-->
+               <a href="http://aesop.com">aesop.com</a>
+                
+            <!--IDIOMAS-->
+                <select name="language" id="">
+                   <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    <option value="italian">Italian</option>
+                </select>
+            <!--REDES SOCIALES-->
+                <ul>
+                    <li>Share
+                        <ul>
+                            <!--ICONOS FONT AWESOME (REDES)-->
+                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </menu>
+            <!--LOGO-->
+            <h1><img src="img/logo_03.png"></h1>
+            <!---->
+            <h2>
+                <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Taxonomy Of Design</font>
+                </font>
+            </h2>
+        <!--NAVEGADOR-->
+               <nav>
+                    <a href="#">Philosophy</a>
+                    <div class="navigation">
+                        <a href="#">All</a>
+                        <a href="#">Stores</a>
+                        <a href="#">Designers</a>
+                        <a href="#">Features</a>
+                        <a href="#">Materials</a>
+                        <a href="#">Quotes</a>
+                    </div>
+                </nav>
+        </header>
+<!--CUERPO-->
+        <main>
+        <!--DIV CONTENEDOR DEL CONTENIDO-->
+        <div class="container">
+           <div class="item-1">
+                <div class="caja_img">
+                    <img src="img/img_10.jpg">
+                </div>
+                <header>
+                    <h3>KYOTO</h3>
+                    <h4>Kyoto, Japan</h4>
+                </header>
+            </div>
+            <div class="item-2">
+                <div class="caja_img">
+                    <img src="img/img_13.jpg">
+                </div>
+                <header>
+                    <h3>MARBLE</h3>
+                    <h4>Saint-sulpice, France</h4>
+                </header>
+            </div>
+            <div class="item-3">
+                <div class="caja_img">
+                    <img src="img/img_17.jpg">
+                </div>
+                <header>
+                    <h3>WAXED CONCRETE</h3>
+                    <h4>Tiquetonne, France</h4>
+                </header>
+            </div>
+            <div class="item-4">
+                <div class="caja_img">
+                    <img src="img/img_07.jpg">
+                </div>
+                <header>
+                    <h3>SNOHETTA</h3>
+                    <h4></h4>
+                </header>
+            </div>
+            <div class="item-5">
+                <header>
+                    <h3>John Raldolph</h3>
+                    <h4></h4>
+                </header>
+            </div>
+            <div class="item-6">
+                <div class="caja_img">
+                    <img src="img/img_23.jpg">
+                </div>
+                <header>
+                    <h3>STUDIO ILSE</h3>
+                    <h4></h4>
+                </header>
+            </div>
+            <div class="item-7">
+                <div class="caja_img">
+                    <img src="img/img_32.jpg">
+                </div>
+                <header>
+                    <h3>BLACKENED STEEL</h3>
+                    <h4>Newbury Street, Usa</h4>
+                </header>
+            </div>
+            <div class="item-8">
+                <div class="caja_img">
+                    <img src="img/img_35.jpg">
+                </div>
+                <header>
+                    <h3>SISAL FLOORING</h3>
+                    <h4>Geneva, Switzerland</h4>
+                </header>
+            </div>
+            <div class="item-9">
+                <div class="caja_img">
+                    <img src="img/img_40.jpg">
+                </div>
+                <header>
+                    <h3>COCONUT HUSK FRINGING</h3>
+                    <h4>Millena Walk, Singapore</h4>
+                </header>
+            </div>
+            <div class="item-10">
+                <div class="caja_img">
+                    <img src="img/img_26.jpg">
+                </div>
+                <header>
+                    <h3>THE PARIS REVIEW</h3>
+                    <h4>Chelsea, USA</h4>
+                </header>
+            </div>
+            <div class="item-11">
+                <div class="caja_img">
+                    <img src="img/img_29.jpg">
+                </div>
+                <header>
+                    <h3>HENRY WILSON STUDIOS</h3>
+                    <h4></h4>
+                </header>
+            </div>
+        </div> 
+        </main>
+        <footer></footer>
+        </body>
+    </html>
